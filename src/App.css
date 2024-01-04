@@ -142,7 +142,7 @@ border: 1px solid rgba(0, 0, 0, 0.304);
   padding: 15px 20px;
   overflow: hidden;
   position: sticky;
-  top: 90px;
+  top: 100px;
   gap: 10px;
   margin-top: 10px;
   border-radius: 10px;
@@ -182,4 +182,23 @@ border: 1px solid rgba(0, 0, 0, 0.304);
   background-color: #fff;
   color: #000000;
   margin-top: 10px;
+}
+
+@media only screen and (max-width:680px){
+  .my-cart{
+    flex-direction: column-reverse;
+  }
+
+  .summary{
+    width: 100%;
+    margin-inline: auto;
+    top: 90px;
+    margin-top: 0px;
+    border-radius: 0px;
+  }
+
+  .card{
+    width: 95%;
+    margin-inline: auto;
+  }
 }
