@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+:root {
+  --header-background: #000000;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.brand {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.navBar {
+  background-color: var(--header-background);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 30px;
+  color: #fff;
+  padding: 30px;
+  position: sticky;
+  top: 0;
+}
+
+.navBar>ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.menuItems {
+  text-decoration: none;
+  color: #fff;
+}
+
+.card-container {
+  width: 95vw;
+  height: fit-content;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  gap: 10px;
+  padding-top: 20px;
+  margin-inline: auto;
+}
+
+.card {
+  /* width: 340px;
+  height: 606px; */
+  max-width: 355px;
+  aspect-ratio: 0.8;
+  flex-shrink: 0;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 8px 0px;
+  border-radius: 20px;
+  color: #fff;
+  gap: 5px;
+  color: #000000;
+  border: 1px solid #0000005a;
 }
 
-.App-link {
-  color: #61dafb;
+.card>p{
+  padding-inline: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.img-container {
+  width: 95%;
+  height: 80%;
+  object-fit: cover;
+  object-position: center;
+  margin-inline: auto;
+  border-radius: 10px;
+}
+
+.btn{
+  width: 95%;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  align-self: center;
+  border-radius: 15px;
+  font-weight: 600;
+}
+
+.btn:hover{
+background-color: #fff;
+color: #000000;
+cursor: pointer;
+border: 1px solid rgba(0, 0, 0, 0.304);
+}
+
+.btn:active{
+  scale: 0.9;
 }
