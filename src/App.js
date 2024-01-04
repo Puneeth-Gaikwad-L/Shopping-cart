@@ -21,7 +21,7 @@ const App = () => {
                 <Link className='menuItems' to="/">Home</Link>
               </li>
               <li>
-                <Link className='menuItems' to="/my-cart">My Cart</Link>
+                <Link className='cart' to="/my-cart">My Cart</Link>
               </li>
             </ul>
           </nav>
