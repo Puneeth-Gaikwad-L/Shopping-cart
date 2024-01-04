@@ -43,7 +43,7 @@ body {
 }
 
 .card-container {
-  width: 95vw;
+  width: 95%;
   height: fit-content;
   display: flex;
   align-items: flex-start;
@@ -105,4 +105,67 @@ border: 1px solid rgba(0, 0, 0, 0.304);
 
 .btn:active{
   scale: 0.9;
+}
+
+.my-cart{
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+}
+
+.my-cart-items{
+  width: 75%;
+  margin: 0;
+  overflow: hidden ;
+}
+
+.summary{
+  background-color: #000000;
+  width: 20%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px;
+  overflow: hidden;
+  position: sticky;
+  top: 90px;
+  gap: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  color: #fff;
+
+}
+
+.summary>h2{
+  text-align: center;
+}
+
+.summary>ol{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.summary>ol>li{
+  background-color: rgba(128, 128, 128, 0.511);
+  border-radius: 10px;
+  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.532);
+  display: flex;
+  justify-content: space-between;
+}
+
+.summary>p{
+  border-top: 1px solid #fff;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 10px;
+}
+
+.btn2{
+  background-color: #fff;
+  color: #000000;
+  margin-top: 10px;
 }
